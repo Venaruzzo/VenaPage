@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>VenaPage.js</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/ico" href="images/favicon.png">
+    <meta name="description" content="VenaPage.js">
+    <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link  rel='stylesheet' type='text/css' href='css/style.css'>   
+    <script type="text/javascript" src="js/VenaPage.js"></script>
+<script>
+       
+        $(document).ready(function(){
+            VenaPage.Design({
+                wrapper : ".main-wrapper",
+                sectionContainer: ".main_section",
+                subSection: "section",
+                pagination: true,
+                centerAlign: true,
+                direction: "vertical" // vertical or horizontal
+         });         
+        });
+
+    </script>
+<style>
+    .main_section:nth-child(1){
+        background-color: blue;
+    }
+    .main_section:nth-child(2){
+        background-color: red;
+    }
+    .main_section:nth-child(3){
+        background-color: yellow;
+    }
+    .main_section:nth-child(4){
+        background-color: grey;
+    }
+    section{
+        background-color: grey;
+        border: 3px solid black;
+    }
+</style>
+</head>
+<body>
+
+<div class="main-wrapper">
+       	    
+    <div class="main_section active">        
+        <section>
+            Section 1
+        </section>
+    </div>
+
+    <div class="main_section">
+        <section>
+        Section 2
+        </section>
+        <section>                
+            Section 2.1            
+        </section>
+        <section>                
+            Section 2.2
+        </section>
+        <section>
+            Section 2.3
+        </section>
+    </div>
+    
+    <div class="main_section">
+        <section>
+            Section 3
+        </section>
+        <section>
+            Section 3.1       
+        </section>
+    </div>
+    
+    <div class="main_section">
+        <section>
+            Section 4
+        </section>            
+    </div>
+</div>
+</body>
+</html>
